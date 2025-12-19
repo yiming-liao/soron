@@ -1,0 +1,52 @@
+{
+  "name": "soron",
+  "version": "0.0.1",
+  "description": "📝 Opinionated, human-first package.json sorter.",
+  "author": {
+    "name": "Yiming Liao",
+    "email": "yimingliao.official@gmail.com",
+    "url": "https://github.com/yiming-liao"
+  },
+  "homepage": "https://github.com/yiming-liao/soron#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yiming-liao/soron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yiming-liao/soron/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/yiming-liao"
+  },
+  "keywords": [
+    "package.json",
+    "sort",
+    "formatter",
+    "npm",
+    "cli",
+    "tooling"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "bin": {
+    "soron": "./dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "25.0.3",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3"
+  }
+}
